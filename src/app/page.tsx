@@ -68,7 +68,7 @@ export default function Home() {
   }, [newsection]);
 
   // 🆕 Mouse move handler for image follow
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     setCursorPos({ x: e.clientX, y: e.clientY });
   };
 
