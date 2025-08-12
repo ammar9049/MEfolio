@@ -45,6 +45,7 @@ export default function Home() {
         scale: 1,
         xPercent: -50,
         left: "50%",
+        top: "50%",
         width: 100,
         height: 100,
         borderRadius: "12px",
