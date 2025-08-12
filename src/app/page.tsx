@@ -76,7 +76,7 @@ export default function Home() {
     <>
       {!newsection ? (
         // section1
-        <section className="flex flex-col w-full h-[100vh] overflow-hidden lg:flex lg:flex-col lg:w-full lg:h-[100vh] lg:overflow-hidden">
+        <section className="flex flex-col w-full h-[100vh] overflow-hidden lg:flex lg:flex-col lg:w-full lg:h-[100vh] lg:overflow-hidden ">
           <Header />
           <div className="flex flex-col w-full h-full justify-center items-start pl-3 animate__animated animate__fadeInUp lg:flex lg:flex-col lg:w-full lg:h-full lg:justify-end lg:items-start lg:pl-12 lg:animate__animated lg:animate__fadeInUp ">
             <h1
