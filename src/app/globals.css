@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
 }
 
 @theme inline {
@@ -24,3 +25,139 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* Altone Thin (100) */
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-ThinOblique.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Altone ExtraLight (200) */
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-ExtraLightOblique.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Altone Light (300) */
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-LightOblique.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Altone Regular (400) */
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-RegularOblique.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Altone Medium (500) */
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-MediumOblique.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Altone SemiBold (600) */
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-SemiBoldOblique.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Altone Bold (700) */
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-BoldOblique.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Altone ExtraBold (800) */
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-ExtraBoldOblique.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Altone Heavy (900) */
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Altone';
+  src: url('/fonts/Altone-HeavyOblique.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 2s;
+}
+
