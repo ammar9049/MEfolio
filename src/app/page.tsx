@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import Header from "./components/header";
 import { motion } from "framer-motion";
+import React from "react";
 
 export default function Home() {
   const [newsection, setNewSection] = useState(false);
@@ -11,7 +12,7 @@ export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
-  const [hoverImage, setHoverImage] = useState(null);
+  const [hoverImage, setHoverImage] = React.useState<string | null>(null);
 
   const items = [
     {
