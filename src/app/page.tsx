@@ -10,6 +10,7 @@ export default function Home() {
   const [newsection, setNewSection] = useState(false);
   const sec2bg = useRef(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const viewportHeight = window.innerHeight;
 
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
   const [hoverImage, setHoverImage] = React.useState<string | null>(null);
@@ -40,7 +41,7 @@ export default function Home() {
   useEffect(() => {
     if (newsection && sec2bg.current) {
       gsap.set(sec2bg.current, {
-        y: window.innerHeight,
+        y: viewportHeight,
         scale: 1,
         xPercent: -50,
         left: "50%",
@@ -59,7 +60,7 @@ export default function Home() {
         {
           duration: 0.8,
           width: "100vw",
-          height: "100.5vh",
+          height: viewportHeight,
           borderRadius: 0,
           ease: "power3.inOut",
         },
