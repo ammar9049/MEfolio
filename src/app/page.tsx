@@ -61,8 +61,8 @@ export default function Home() {
         {
           duration: 0.8,
           width: "100vw",
-          top: "0",
-          height: viewportHeight,
+          height: "100vh",
+          top: "0%",
           borderRadius: 0,
           ease: "power3.inOut",
         },
@@ -106,7 +106,7 @@ export default function Home() {
       ) : (
         <>
           {/* // section2 */}
-          <section className="flex relative w-full h-screen bg-white text-white justify-center items-center overflow-hidden lg:flex lg:relative lg:w-full lg:h-screen lg:bg-white lg:text-white lg:justify-center lg:items-center lg:overflow-hidden">
+          <section className="flex relative w-full min-h-[100vh] bg-white text-white justify-center items-center overflow-hidden lg:flex lg:relative lg:w-full lg:h-screen lg:bg-white lg:text-white lg:justify-center lg:items-center lg:overflow-hidden">
             <div
               ref={sec2bg}
               className="bg-black absolute inset-0 z-0 w-screen h-screen md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
