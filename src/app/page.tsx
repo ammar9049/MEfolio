@@ -40,34 +40,53 @@ export default function Home() {
   useEffect(() => {
     if (newsection && sec2bg.current) {
       const viewportHeight = window.innerHeight;
-      gsap.set(sec2bg.current, {
-        y: viewportHeight,
-        scale: 1,
-        xPercent: -50,
-        left: "50%",
-        top: "50%",
-        width: 100,
-        height: 100,
-        borderRadius: "12px",
-      });
 
-      const tl = gsap.timeline();
-      tl.to(sec2bg.current, {
-        duration: 0.6,
-        y: 0,
-        ease: "power3.out",
-      }).to(
-        sec2bg.current,
+      // Create GSAP matchMedia instance
+      const mm = gsap.matchMedia();
+
+      mm.add(
         {
-          duration: 0.8,
-          width: "100vw",
-          height: "100vh",
-          top: "0%",
-          borderRadius: 0,
-          ease: "power3.inOut",
+          isMobile: "(max-width: 768px)",
+          isDesktop: "(min-width: 769px)",
         },
-        ">"
+        (context) => {
+          const { isMobile, isDesktop } = context.conditions!;
+
+          // Reset initial state
+          gsap.set(sec2bg.current, {
+            y: viewportHeight,
+            scale: 1,
+            xPercent: -50,
+            left: "50%",
+            top: "50%",
+            width: 100,
+            height: 100,
+            borderRadius: "12px",
+          });
+
+          // Animate
+          const tl = gsap.timeline();
+          tl.to(sec2bg.current, {
+            duration: 0.6,
+            y: 0,
+            ease: "power3.out",
+          }).to(
+            sec2bg.current,
+            {
+              duration: 0.8,
+              width: "100vw",
+              height: "100vh",
+              top: isMobile ? "0%" : "50%", // 👈 mobile vs desktop
+              borderRadius: 0,
+              ease: "power3.inOut",
+            },
+            ">"
+          );
+        }
       );
+
+      // Cleanup matchMedia when component unmounts
+      return () => mm.revert();
     }
   }, [newsection]);
 
@@ -170,7 +189,7 @@ export default function Home() {
 
           {/* // section3 */}
           <section
-            className="flex relative w-full min-h-screen bg-black text-white px-5 py-7 lg:flex lg:relative lg:w-full lg:min-h-screen lg:bg-black lg:text-white lg:px-7 lg:py-7"
+            className="flex relative w-full min-h-screen bg-black text-white px-5 pb-7 lg:flex lg:relative lg:w-full lg:min-h-screen lg:bg-black lg:text-white lg:px-7 lg:py-7"
             onMouseMove={handleMouseMove}
           >
             {/* 🆕 Floating image */}
