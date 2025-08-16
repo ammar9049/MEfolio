@@ -61,6 +61,7 @@ export default function Home() {
         {
           duration: 0.8,
           width: "100vw",
+          top: "0",
           height: viewportHeight,
           borderRadius: 0,
           ease: "power3.inOut",
@@ -108,7 +109,7 @@ export default function Home() {
           <section className="flex relative w-full h-screen bg-white text-white justify-center items-center overflow-hidden lg:flex lg:relative lg:w-full lg:h-screen lg:bg-white lg:text-white lg:justify-center lg:items-center lg:overflow-hidden">
             <div
               ref={sec2bg}
-              className="bg-black absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0 lg:bg-black lg:absolute lg:inset-0 lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:z-0"
+              className="bg-black absolute inset-0 z-0 w-screen h-screen md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
             ></div>
             <div className="flex flex-col w-full h-screen px-5 py-0  z-10 lg:flex lg:flex-col lg:w-full lg:h-screen lg:px-7 lg:py-0 lg:z-10">
               <div className="hidden  w-full h-40 lg:flex lg:w-full lg:h-40">
@@ -354,7 +355,7 @@ export default function Home() {
               className="flex flex-col w-full h-full lg:flex lg:flex-col lg:w-full lg:h-full lg:justify-center"
               initial={{ opacity: 0, y: 70 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
             >
               <div className="flex flex-col w-full gap-4 mt-14 lg:flex lg:flex-row lg:w-full lg:gap-50 lg:mt-14">
@@ -447,7 +448,7 @@ export default function Home() {
               className="flex flex-col w-full  justify-end items-center gap-5 lg:flex lg:flex-col lg:w-full lg:h-90 lg:justify-end lg:items-center lg:gap-5"
               initial={{ opacity: 0, y: 70 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
             >
               <h1
@@ -477,7 +478,7 @@ export default function Home() {
               className="flex  w-full h-35 justify-center items-end lg:flex lg:w-full lg:h-35 lg:justify-center lg:items-end"
               initial={{ opacity: 0, y: 70 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
             >
               <button
@@ -498,7 +499,7 @@ export default function Home() {
               className="flex  w-full gap-6 mt-16 lg:flex lg:w-full lg:gap-6 lg:mt-16"
               initial={{ opacity: 0, y: 70 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
             >
               <a
