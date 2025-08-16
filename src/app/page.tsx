@@ -128,7 +128,7 @@ export default function Home() {
                     />
                   </button>
                 </div>
-                <div className="hidden flex-1 justify-end h-full items-center lg:flex lg:flex-1 lg:justify-end lg:h-full lg:items-center ">
+                <div className="hidden flex-1 justify-end h-full lg:flex lg:flex-1 lg:justify-end lg:h-full lg:items-center ">
                   <h1
                     className="w-[65%] text-white text-[18px] uppercase lg:w-[65%] lg:text-white lg:text-[18px] lg:uppercase"
                     style={{
@@ -143,7 +143,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex w-full h-50 pt-9 lg:flex lg:w-full lg:h-90 lg:items-end">
+              <div className="flex w-full h-64 pt-9 lg:flex lg:w-full lg:h-90 lg:items-end">
                 <h1
                   className="w-full text-white text-[48px] capitalize leading-none lg:w-[50%] lg:text-white lg:text-[78px] lg:capitalize lg:leading-none"
                   style={{ fontFamily: "Altone ,sans-serif", fontWeight: 500 }}
@@ -153,7 +153,7 @@ export default function Home() {
                 </h1>
               </div>
 
-              <div className="flex flex-1 justify-end h-full items-center lg:flex lg:flex-1 lg:justify-end lg:h-full lg:items-center">
+              <div className="flex justify-end items-center lg:flex lg:flex-1 lg:justify-end lg:h-full lg:items-center">
                 <h1
                   className="w-full text-white text-[24px] lg:w-[55%] lg:text-white lg:text-[24px]"
                   style={{ fontFamily: "Altone ,sans-serif", fontWeight: 400 }}
