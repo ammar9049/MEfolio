@@ -199,10 +199,11 @@ export default function Home() {
                 alt="Preview"
                 className="fixed pointer-events-none z-50 w-64 h-auto lg:fixed lg:pointer-events-none lg:z-50 lg:w-64 lg:h-auto"
                 style={{
-                  top: cursorPos.y - 70,
+                  top: cursorPos.y - 100,
                   left: cursorPos.x - 70,
                   transform: "translate(-50%, -50%)",
                   transition: "top 0.05s linear, left 0.05s linear",
+                  borderRadius: "10px",
                 }}
               />
             )}
@@ -228,10 +229,10 @@ export default function Home() {
               {/* content1 */}
               <div
                 className="flex flex-col w-full gap-6 items-center group cursor-crosshair lg:flex lg:flex-row lg:w-full lg:gap-0 lg:mb-6 lg:h-46 lg:items-center lg:group lg:cursor-crosshair"
-                onMouseEnter={() => setHoverImage("1.png")}
+                onMouseEnter={() => setHoverImage("web2.png")}
                 onMouseLeave={() => setHoverImage(null)}
               >
-                <div className="flex w-full flex-1 lg:flex lg:flex-1 lg:items-center lg:w-full lg:h-46">
+                <div className="flex w-full flex-1 lg:flex lg:flex-none lg:w-[80%] lg:items-center lg:h-46">
                   <h1
                     className="text-white text-[40px] tracking-[-1.5px] leading-none transition-transform duration-300 group-hover:translate-x-4 lg:text-white lg:text-[65px] lg:tracking-[-1.5px] lg:transition-transform lg:duration-300 lg:group-hover:translate-x-4"
                     style={{
@@ -239,10 +240,10 @@ export default function Home() {
                       fontWeight: 400,
                     }}
                   >
-                    Foccus - App Blocker
+                    Scottish Wedding Photographer
                   </h1>
                 </div>
-                <div className="flex lg:flex lg:flex-1 lg:items-center lg:justify-end w-full">
+                <div className="flex lg:flex lg:flex-1 lg:w-full lg:items-center lg:justify-end w-full">
                   <h1
                     className="text-white text-[18px] leading-none tracking-[-1.5px] lg:text-white lg:text-[20px] lg:tracking-[-1.5px]"
                     style={{
@@ -250,11 +251,17 @@ export default function Home() {
                       fontWeight: 300,
                     }}
                   >
-                    MOBILE & WEB Design, Branding, Interaction Design
+                    Photography - Website Design
                   </h1>
                 </div>
                 <div className="flex w-full lg:hidden">
-                  <button className="w-14 h-14 font-[400] justify-center items-center text-white text-[24px] border-2 border-white hover:bg-black hover:text-white duration-300 cursor-crosshair rounded-full uppercase lg:w-[70%] lg:h-24 lg:font-[400] lg:text-black lg:text-[24px] lg:border-2 lg:border-black lg:hover:bg-black lg:hover:text-white lg:duration-300 lg:cursor-crosshair lg:rounded-full lg:uppercase">
+                  <button
+                    onClick={() => {
+                      window.location.href =
+                        "https://www.crieffphotography.co.uk/";
+                    }}
+                    className="w-14 h-14 font-[400] justify-center items-center text-white text-[24px] border-2 border-white hover:bg-black hover:text-white duration-300 cursor-crosshair rounded-full uppercase lg:w-[70%] lg:h-24 lg:font-[400] lg:text-black lg:text-[24px] lg:border-2 lg:border-black lg:hover:bg-black lg:hover:text-white lg:duration-300 lg:cursor-crosshair lg:rounded-full lg:uppercase"
+                  >
                     <ArrowUpRight
                       className="text-current inline-flex  lg:text-current lg:inline-flex lg:ml-3 lg:align-top"
                       size={28}
@@ -268,18 +275,18 @@ export default function Home() {
               {/* content2 */}
               <div
                 className="flex flex-col w-full gap-6 items-center group cursor-crosshair lg:flex lg:w-full lg:flex-row lg:mb-6 lg:h-46 lg:items-center lg:group lg:cursor-crosshair"
-                onMouseEnter={() => setHoverImage("2.png")}
+                onMouseEnter={() => setHoverImage("web1.png")}
                 onMouseLeave={() => setHoverImage(null)}
               >
                 <div className="flex w-full flex-1 lg:flex lg:flex-none lg:w-[80%] ">
                   <h1
-                    className="text-white text-[40px] tracking-[-1.5px] leading-none transition-transform duration-300 group-hover:translate-x-4 lg:text-white lg:text-[65px] lg:tracking-[-1.5px] lg:transition-transform lg:duration-300 lg:group-hover:translate-x-4"
+                    className="text-white w-full text-[40px] tracking-[-1.5px] leading-none transition-transform duration-300 group-hover:translate-x-4 lg:text-white lg:text-[65px] lg:tracking-[-1.5px] lg:transition-transform lg:duration-300 lg:group-hover:translate-x-4"
                     style={{
                       fontFamily: "Altone ,sans-serif",
                       fontWeight: 400,
                     }}
                   >
-                    Indigency - Agency Website
+                    My Commercial Lawyers
                   </h1>
                 </div>
                 <div className="flex lg:flex lg:flex-1 lg:items-center lg:justify-end w-full">
@@ -290,11 +297,17 @@ export default function Home() {
                       fontWeight: 300,
                     }}
                   >
-                    Website Design
+                    Law Firm - Website Design
                   </h1>
                 </div>
                 <div className="flex w-full lg:hidden">
-                  <button className="w-14 h-14 font-[400] justify-center items-center text-white text-[24px] border-2 border-white hover:bg-black hover:text-white duration-300 cursor-crosshair rounded-full uppercase lg:w-[70%] lg:h-24 lg:font-[400] lg:text-black lg:text-[24px] lg:border-2 lg:border-black lg:hover:bg-black lg:hover:text-white lg:duration-300 lg:cursor-crosshair lg:rounded-full lg:uppercase">
+                  <button
+                    onClick={() => {
+                      window.location.href =
+                        "https://www.mycommerciallawyers.com/";
+                    }}
+                    className="w-14 h-14 font-[400] justify-center items-center text-white text-[24px] border-2 border-white hover:bg-black hover:text-white duration-300 cursor-crosshair rounded-full uppercase lg:w-[70%] lg:h-24 lg:font-[400] lg:text-black lg:text-[24px] lg:border-2 lg:border-black lg:hover:bg-black lg:hover:text-white lg:duration-300 lg:cursor-crosshair lg:rounded-full lg:uppercase"
+                  >
                     <ArrowUpRight
                       className="text-current inline-flex  lg:text-current lg:inline-flex lg:ml-3 lg:align-top"
                       size={28}
@@ -308,10 +321,10 @@ export default function Home() {
               {/* content3 */}
               <div
                 className="flex flex-col w-full gap-6 items-center group cursor-crosshair lg:flex lg:w-full lg:mb-6  lg:flex-row lg:h-46 lg:items-center lg:group lg:cursor-crosshair"
-                onMouseEnter={() => setHoverImage("3.png")}
+                onMouseEnter={() => setHoverImage("web3.png")}
                 onMouseLeave={() => setHoverImage(null)}
               >
-                <div className="flex w-full flex-1 lg:flex lg:flex-none lg:w-[85%]">
+                <div className="flex w-full flex-1 lg:flex lg:flex-none lg:w-[50%]">
                   <h1
                     className="text-white text-[40px] tracking-[-1.5px] leading-none transition-transform duration-300 group-hover:translate-x-4 lg:text-white lg:text-[65px] lg:tracking-[-1.5px] lg:transition-transform lg:duration-300 lg:group-hover:translate-x-4"
                     style={{
@@ -319,7 +332,7 @@ export default function Home() {
                       fontWeight: 400,
                     }}
                   >
-                    Eneftee - NFT Launchpad Website
+                    ArrowDistribution
                   </h1>
                 </div>
                 <div className="flex lg:flex lg:flex-1 lg:items-center lg:justify-end w-full">
@@ -330,11 +343,16 @@ export default function Home() {
                       fontWeight: 300,
                     }}
                   >
-                    Website Design
+                    Ecommerece - Website Design
                   </h1>
                 </div>
                 <div className="flex w-full lg:hidden">
-                  <button className="w-14 h-14 font-[400] justify-center items-center text-white text-[24px] border-2 border-white hover:bg-black hover:text-white duration-300 cursor-crosshair rounded-full uppercase lg:w-[70%] lg:h-24 lg:font-[400] lg:text-black lg:text-[24px] lg:border-2 lg:border-black lg:hover:bg-black lg:hover:text-white lg:duration-300 lg:cursor-crosshair lg:rounded-full lg:uppercase">
+                  <button
+                    onClick={() => {
+                      window.location.href = "https://arrowdistribution.org/";
+                    }}
+                    className="w-14 h-14 font-[400] justify-center items-center text-white text-[24px] border-2 border-white hover:bg-black hover:text-white duration-300 cursor-crosshair rounded-full uppercase lg:w-[70%] lg:h-24 lg:font-[400] lg:text-black lg:text-[24px] lg:border-2 lg:border-black lg:hover:bg-black lg:hover:text-white lg:duration-300 lg:cursor-crosshair lg:rounded-full lg:uppercase"
+                  >
                     <ArrowUpRight
                       className="text-current inline-flex  lg:text-current lg:inline-flex lg:ml-3 lg:align-top"
                       size={28}
@@ -377,7 +395,7 @@ export default function Home() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
             >
-              <div className="flex flex-col w-full gap-4 mt-14 lg:flex lg:flex-row lg:w-full lg:gap-50 lg:mt-14">
+              <div className="flex flex-col w-full gap-4 mt-7 lg:flex lg:flex-row lg:w-full lg:gap-50 lg:mt-14">
                 <div className="flex lg:flex">
                   <h1
                     className="text-white text-[34px] tracking-[-1.5px] lg:text-white lg:text-[40px] lg:tracking-[-1.5px]"
